@@ -39,7 +39,7 @@ class ConfirmNoSms2 extends Component {
                                         </div>
                                         <p class="dapp-recovery-block-txt">Didn’t reecive the OTP (One time Password) <a href="#" class="signin-btn">Send Again </a></p>
                                     </div>
-                                    <div class="d-flex dApp-request-btn"><a href="/Authentication/ConfirmNoSms1" class="btn bttn-primary">Confirm OTP</a></div>
+                                    <div class="d-flex dApp-request-btn"><a href="/Authentication/ConfirmNoSms3" class="btn bttn-primary">Confirm OTP</a></div>
                                 </div>
                             </div>
 

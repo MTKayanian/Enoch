@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import Link from 'next/link';
 import classnames from 'classnames';
 
-class ConfirmNoSms1 extends Component {
+class ConfirmNoSms4 extends Component {
     constructor(props) {
         super(props);
 
@@ -145,7 +145,7 @@ class ConfirmNoSms1 extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex dApp-request-btn"><a href="/Authentication/ConfirmNoSms2" class="btn bttn-primary browser-next">NEXT</a></div>
+                                    <div class="d-flex dApp-request-btn"><a href="" class="btn bttn-primary browser-next">Request OTP</a></div>
                                 </div>
                             </div>
 
@@ -157,4 +157,4 @@ class ConfirmNoSms1 extends Component {
         );
     }
 }
-export default ConfirmNoSms1;
+export default ConfirmNoSms4;

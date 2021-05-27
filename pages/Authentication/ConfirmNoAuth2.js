@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import Link from 'next/link';
 
 class ConfirmNoAuth2 extends Component {
   constructor(props) {
@@ -41,9 +42,9 @@ class ConfirmNoAuth2 extends Component {
                   </div>
 
                   <div class="d-flex dApp-request-btn">
-                    <a href="#" class="btn bttn-primary">
-                      GOT IT
-                    </a>
+                    <Link href="/Authentication/browser-verification-ga">
+                      <a class="btn bttn-primary">GOT IT</a>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -1,7 +1,7 @@
-.ezl-dashboard-container{
-	max-width:1320px;
-	margin:auto;
-	padding:0 2rem;
+.ezl-dashboard-container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0px 25px;
 }
 .dashboard-header-bredcrumb {
     background: #EDEFF7;
@@ -13,17 +13,14 @@
     margin-bottom: 0;
 	padding: 16px 0px;
 }
-.dashboard-header-bredcrumb ul li{
-    text-transform: uppercase;
-    color: rgba(136, 142, 163, 0.8);
-    text-shadow: 0px 2px 5px rgb(83 97 255 / 5%);
-    font-family: Open Sans;
+.dashboard-header-bredcrumb ul li a{
     font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
+font-weight: 600;
+font-size: 13px;
+line-height: 18px;
+color: #828282;
 }
-.dashboard-header-bredcrumb ul li a.active{
+.dashboard-header-bredcrumb ul li a.dsh-active{
 	color:#445FBC;
 	/* font-weight:800; */
 }

@@ -1,14 +1,28 @@
 import React, { Component, useState } from 'react';
+import classnames from 'classnames';
 import Link from 'next/link';
-
 
 class ConfirmNoAuth extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      changePhoneNoModel: false,
+      entryPhoneNoModel: false,
+      listPhoneNo: false,
+      listPhoneValue: '+44',
+      phoneNoList: ['+11', '+22', '+33', '+44', '+55', '+66'],
+    };
   }
   render() {
+    console.log(this.state);
+    const {
+      changePhoneNoModel,
+      entryPhoneNoModel,
+      listPhoneNo,
+      listPhoneValue,
+      phoneNoList,
+    } = this.state;
     return (
       <>
         <section>
@@ -43,7 +57,9 @@ class ConfirmNoAuth extends Component {
                     <p class="dapp-recovery-block-txt">
                       Do you want to use the same number or willing to .{' '}
                       <a
-                        href="#"
+                        onClick={() =>
+                          this.setState({ changePhoneNoModel: true })
+                        }
                         class="signin-btn"
                         data-toggle="modal"
                         data-target="enoch-verify-modal"
@@ -53,10 +69,20 @@ class ConfirmNoAuth extends Component {
                       it
                     </p>
                     <div class="enoch-dapp-modal-block">
-                      <div id="enoch-verify-modal" class="modal fade">
+                      <div
+                        id="enoch-verify-modal"
+                        className={classnames('modal fade', {
+                          open: changePhoneNoModel == true,
+                        })}
+                      >
                         {/* <!-- Modal content --> */}
                         <div class="modal-content dapp-change-number">
-                          <span class="close">
+                          <span
+                            class="close"
+                            onClick={() =>
+                              this.setState({ changePhoneNoModel: false })
+                            }
+                          >
                             <img
                               src="/images/popupCross.png"
                               alt="close"
@@ -127,8 +153,14 @@ class ConfirmNoAuth extends Component {
                               </div>
                               <div class="d-flex dApp-confirm-btn">
                                 <a
-                                  href="#"
-                                  class="btn bttn-primary bttn-disable"
+                                  onClick={() =>
+                                    this.setState({
+                                      changePhoneNoModel: false,
+                                      entryPhoneNoModel: true,
+                                    })
+                                  }
+                                  class="btn bttn-primary"
+                                  // class="btn bttn-primary bttn-disable"
                                   id="register"
                                   data-toggle="modal"
                                   data-target="enoch-verify-modal2"
@@ -141,10 +173,20 @@ class ConfirmNoAuth extends Component {
                         </div>
                       </div>
                       {/* <!--2nd popup--> */}
-                      <div id="enoch-verify-modal2" class="modal fade">
+                      <div
+                        id="enoch-verify-modal2"
+                        className={classnames('modal fade', {
+                          open: entryPhoneNoModel == true,
+                        })}
+                      >
                         {/* <!-- Modal content --> */}
                         <div class="modal-content dapp-change-number">
-                          <span class="close">
+                          <span
+                            class="close"
+                            onClick={() =>
+                              this.setState({ entryPhoneNoModel: false })
+                            }
+                          >
                             <img
                               src="/images/popupCross.png"
                               alt="close"
@@ -166,19 +208,41 @@ class ConfirmNoAuth extends Component {
                                   <div class="sign-form-drop-box2">
                                     <a
                                       href="javascript:void(0)"
-                                      onclick="selectphone()"
+                                      onClick={() =>
+                                        this.setState({ listPhoneNo: true })
+                                      }
                                       id="selectphone"
                                       class="sign-form-droplist sign-form-droplist-phn"
                                     >
-                                      +44
+                                      {listPhoneValue}
                                     </a>
                                   </div>
                                   <div
                                     id="selectphone-form-DropdownList"
-                                    class="sign-form-content signup-poohe-content"
+                                    className={classnames(
+                                      'sign-form-content signup-poohe-content',
+                                      {
+                                        show: listPhoneNo == true,
+                                      }
+                                    )}
                                   >
                                     <ul class="sign-form-drop-scrollable">
-                                      <li>
+                                      {phoneNoList.map((v, i) => {
+                                        return (
+                                          <li
+                                            onClick={() =>
+                                              this.setState({
+                                                listPhoneValue: v,
+                                                listPhoneNo: false,
+                                              })
+                                            }
+                                          >
+                                            <div class="contact-inner">{v}</div>
+                                          </li>
+                                        );
+                                      })}
+                                      
+                                      {/* <li>
                                         <div class="contact-inner">+11</div>
                                       </li>
                                       <li>
@@ -195,7 +259,7 @@ class ConfirmNoAuth extends Component {
                                       </li>
                                       <li>
                                         <div class="contact-inner"> +66</div>
-                                      </li>
+                                      </li> */}
                                     </ul>
                                   </div>
                                 </div>
@@ -207,8 +271,13 @@ class ConfirmNoAuth extends Component {
                                   />
                                 </div>
                               </div>
-                              <div class="d-flex dApp-confirm-btn">
-                                  <a class="btn bttn-primary">Confirm</a>
+                              <div
+                                class="d-flex dApp-confirm-btn"
+                                onClick={() =>
+                                  this.setState({ entryPhoneNoModel: false })
+                                }
+                              >
+                                <a class="btn bttn-primary">Confirm</a>
                               </div>
                             </div>
                           </div>
@@ -217,10 +286,8 @@ class ConfirmNoAuth extends Component {
                     </div>
                   </div>
                   <div class="d-flex dApp-request-btn">
-                  <Link href="/Authentication/ConfirmNoAuth1">                     
-                    <a class="btn bttn-primary">
-                      Requet OTP
-                    </a>
+                    <Link href="/Authentication/ConfirmNoAuth1">
+                      <a class="btn bttn-primary">Requet OTP</a>
                     </Link>
                   </div>
                 </div>

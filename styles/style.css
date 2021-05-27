@@ -21,9 +21,7 @@
     text-shadow: 0px 2px 5px rgb(83 97 255 / 5%);
 }
 
-.dashboard-header-bredcrumb{
-    z-index: 100;
-}
+
 
 .custom-header{
     z-index: 100;
@@ -3805,7 +3803,7 @@ input.phone-input {
 }
 
 .Setup-with-Trezor-MetaMask-sect .MetaMask-header{
-    border-bottom: 1px solid #00F0FF;
+    border-bottom: 1px solid #D4D8DD;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
@@ -3851,6 +3849,7 @@ input.phone-input {
 }
 .Connect-MetaMask h1 span, .Connect-Trezor h1 span {
     color: #306DC9;
+    margin-right: 5px;
 }
 .Connect-MetaMask p, .Connect-Trezor p{
     font-family: Open Sans;
@@ -3875,28 +3874,24 @@ input.phone-input {
     margin-right: 20px;
     background: transparent;
     border: 3px solid #8656EF;
-    padding: 13.5px 48px;
+    padding: 16.5px 48px;
     border-radius: 4px;
     
 }
-.enoch-last-btn-sect .btn-back a{
+.enoch-last-btn-sect .btn-back a {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    justify-content: center;
+    line-height: 22px;
     align-items: center;
     text-align: center;
-    text-transform: uppercase;
-    color: #8656EF;
+    color: #595F69;
 }
 .enoch-last-btn-sect .btn-next {
     padding: 18px 48px;
     background: #FF8A00;
     border-radius: 4px;
-    border: none;
 }
 .enoch-last-btn-sect .btn-next a{
     font-family: Open Sans;
@@ -3911,10 +3906,6 @@ input.phone-input {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.enoch-last-btn-sect .btn-transfer{
-    background: #D2D2D2;
-}
-
 .KYC-step-2-2nd-sect{
     max-width: 1240px;
     margin: 30px auto;
@@ -3928,12 +3919,10 @@ input.phone-input {
     display: flex;
     justify-content: space-between;
 }
-
 .KYC-step-2-from-sect{
     max-width: 530px;
     text-align: left;
 }
-
 .KYC-step-2-from-sect lable{
     font-family: Open Sans;
     font-style: normal;
@@ -3946,8 +3935,6 @@ input.phone-input {
     color: #306DC9;
     margin-bottom: 10px;
 }
-
-
 .form-left-side .from-input{
     display: flex;
     background: #FFFFFF;
@@ -3957,25 +3944,19 @@ input.phone-input {
     padding: 10px 20px;
     width: 520px;
 }
-
 .from-input-left{
     border-right: 1px solid #E0E0E0;
     margin-right: 10px;
     padding-right: 10px;
 }
-
 .KYC-step-2-from-sect .form-left-side from-input{}
-
 .KYC-step-2-from-sect .form-left-side from-input .from-input-left{}
-
 .KYC-step-2-from-sect .form-left-side from-input .from-input-left img{}
-
 .from-input-left select{
     padding-right: 10px;
     border: none;
     outline: none;
 }
-
 .from-input-left select{
     font-family: Open Sans;
     font-style: normal;
@@ -3986,7 +3967,6 @@ input.phone-input {
     color: #333333;
     opacity: 0.9;
 }
-
 .from-input-right{
     padding-top: 8px;
 }
@@ -4005,15 +3985,12 @@ input.phone-input {
     width: 100%;
     
 }
-
 .step-2-arrow-sect .arrow-icon{
     margin-top: 50px;
 }
-
 .KYC-step-2-to-sect{
     max-width: 530px;
 }
-
 .KYC-step-2-to-sect lable{
     font-family: Open Sans;
     font-style: normal;
@@ -4026,7 +4003,6 @@ input.phone-input {
     color: #306DC9;
     margin-bottom: 10px;
 }
-
 .to-right-side .to-input {
     display: flex;
     background: #FFFFFF;
@@ -4051,34 +4027,27 @@ input.phone-input {
     color: #B2B2B2;
     width: 100%;
 }
-
 .mb-340{
     margin-bottom: 340px;
 }
 .mb-170{
     margin-bottom: 170px;
 }
-
 .step-2-warning-text h2 a{
     text-decoration: underline;
     color: #8D35FD;
 }
-
-
 .Connect-wallet-sect{
-    margin-top: 38px;
     background: #FFFFFF;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
 }
-
 .Connect-wallet-headings {
     width: 100%;
     height: auto;
     background: #366C93;
     border-radius: 8px 8px 0px 0px;
 }
-
 .Connect-wallet-headings h1{
     font-family: Open Sans;
     font-style: normal;
@@ -4092,29 +4061,34 @@ input.phone-input {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
 .Connect-wallet-menu-sect{}
-
 .Connect-wallet-menu-sect .menu-row-1{
     padding: 30px;
     
 }
-
 .Connect-wallet-menu-sect .menu-row-1 ul{
     display: flex;
     justify-content: space-between;
 }
-
 .Connect-wallet-menu-sect .menu-row-1 ul li{
     display: flex;
+    align-items: center;
     width: 196px;
     background: #FFFFFF;
     border: 1px solid #C5D2F8;
     border-radius: 100px;
 }
 .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon{
-    margin: 10px;
-    opacity: 0.5;
+    margin: 10px 0px;
+    background: none;
+    border: none;
+    padding: 0px 10px;
+}
+.Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon img{
+    opacity: 0.8;
+    background: rgba(207, 219, 244, 0.4);
+    border-radius: 50%;
+    border: none;
 }
 .Connect-wallet-menu-sect .menu-row-1 ul li h2{
     font-family: Open Sans;
@@ -4128,7 +4102,6 @@ input.phone-input {
     color: #4F4F4F;
     padding-top: 5px;
 }
-
 .Connect-wallet-menu-sect .menu-row-2{
     padding: 30px;
     padding-top: 0px;
@@ -4147,10 +4120,19 @@ input.phone-input {
     border-radius: 100px;
 }
 .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon{
-    margin: 12px;
-    margin-left: 10px;
-    opacity: 0.5;
+    margin: 12px 0px;
+    background: none;
+    border: none;
+    padding: 0px 10px;
 }
+
+.Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon img{
+    background: rgba(207, 219, 244, 0.4);
+    border-radius: 50%;
+    opacity: 0.8;
+    border: none;
+}
+
 .Connect-wallet-menu-sect .menu-row-2 ul li h2{
     font-family: Open Sans;
     font-style: normal;
@@ -4162,6 +4144,7 @@ input.phone-input {
     text-transform: uppercase;
     color: #4F4F4F;
     padding-top: 5px;
+    text-align: left;
 }
 
 .Connect-wallet-menu-sect .menu-row-1 ul li:hover{
@@ -4169,6 +4152,9 @@ input.phone-input {
 }
 .Connect-wallet-menu-sect .menu-row-2 ul li:hover{
     background: #4112C8;
+}
+.Connect-wallet-menu-sect .menu-row-2 ul .last-CW-icon-li:hover{
+    background: none;
 }
 
 .Connect-wallet-menu-sect .menu-row-1 ul li:hover h2{
@@ -4178,44 +4164,19 @@ input.phone-input {
     color: #ffffff;
 }
 
-.Connect-wallet-menu-sect .menu-row-1 ul li:hover .CW-icon{
+.Connect-wallet-menu-sect .menu-row-1 ul li:hover .CW-icon img{
+    background: #ffffff;
+}
+.Connect-wallet-menu-sect .menu-row-1 ul li:hover .CW-icon img{
     opacity: 1;
 }
-.Connect-wallet-menu-sect .menu-row-2 ul li:hover .CW-icon{
+.Connect-wallet-menu-sect .menu-row-2 ul li:hover .CW-icon img{
+    background: #ffffff;
+}
+.Connect-wallet-menu-sect .menu-row-2 ul li:hover .CW-icon img{
     opacity: 1;
 }
 
-.MetaMask-pop-up{
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    width: 280px;
-    height: 626px;
-    text-align: center;
-    padding-top: 226px;
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    z-index: 10;
-    display: none;
-}
-
-.MetaMask-pop-up-text{
-    margin-top: 20px;
-}
-.MetaMask-pop-up-text h1{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 27px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
-}
 
 /*---STEP-3---*/
 .Required-KYC-Documents{}
@@ -5208,7 +5169,6 @@ input.phone-input {
     line-height: 22px;
     color: #FFFFFF;
 }
-
 .Verificaion-Successfully-completed-sect{
     background: #FFFFFF;
     max-width: 1240px;
@@ -5272,8 +5232,786 @@ input.phone-input {
     color: #8D35FD;
     font-weight: 700;
 }
+.Thanks-for-Joining-section {
+    max-width: 1240px;
+    margin: 30px auto;
+    padding: 30px 15px 20px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgb(123 148 184 / 8%);
+    height: auto;
+    border-radius: 2px;
+}
+.Thanks-for-Joining-headings{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.Thanks-for-Joining-headings h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+}
+.Thanks-for-Joining-list{
+    margin-left: 20px;
+}
+.Thanks-for-Joining-list ul{
+    list-style: none;
+}
+.Thanks-for-Joining-list ul li{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    color: #306DC9;
+    padding: 10px 0px;
+}
+.Thanks-for-Joining-list ul li span{
+    color: #333333;
+    font-weight: 600;
+    padding-left: 5px;
+}
+.Thanks-for-Joining-img{
+    margin-top: 29px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.Thanks-for-Joining-img img{}
+.linking-wallet-pop-up{
+    background: url(/images/step-2-imgs/linking-wallet-pop-up-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    width: 100%;
+    height: 115%;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 100;
+    display: none;
+}
+.linking-wallet-pop-up-content{
+    max-width: 440px;
+    margin: auto;
+    height: auto;
+    background: #ffffff;
+    padding: 16px 0px;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    margin-top: 330px;
+}
+.linking-wallet-pop-up-heading{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    margin-top: -10px;
+    border-bottom: 1px solid #D4D8DD;
+    
+}
+.linking-wallet-pop-up-heading h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+.linking-wallet-pop-up-text{
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.linking-wallet-pop-up-text p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #3F434A;
+    padding: 0px 10px;
+}
+.linking-wallet-pop-up-content-disabled .linking-wallet-pop-up-text p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #3F434A;
+    padding: 0px 0px;
+}
+.linking-wallet-pop-up-btn{}
+.linking-wallet-pop-up-btn button{
+    padding: 9px 61px;
+    outline: none;
+    border-radius: 2px;
+}
+.linking-wallet-pop-up-btn button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.linking-wallet-pop-up-btn .button-Disabled{
+    border: 3px solid transparent;
+}
+.linking-wallet-pop-up-btn .button-Disabled a{
+    color: #8A9099;
+    opacity: 0.5;
+}
+.linking-wallet-pop-up-close{
+    text-align: right;
+    margin-right: 14px;
+    margin-top: -6px;
+    cursor: pointer;
+}
+.enoch-last-btn-sect .button-Disabled{
+    background: #E8E9EB;
+    border: 2px solid transparent;
+}
+.enoch-last-btn-sect .button-Disabled a{
+    color: #8A9099;
+    opacity: 0.5;
+}
+.linking-wallet-pop-up-content-2 {
+    max-width: 358px;
+    height: auto;
+    margin: auto;
+    margin-right: 0px;
+    background: #ffffff;
+    position: relative;
+    border-bottom-left-radius: 4px;
+}
+.linking-wallet-pop-up-content-disabled{
+    max-width: 440px;
+    margin: auto;
+    height: auto;
+    background: #ffffff;
+    padding: 16px 0px;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    margin-top: -360px;
+}
+.MetaMask-Notification-headings{
+    width: 100%;
+    height: auto;
+    background: #373737;
+    border-radius: 2px 2px 0px 0px;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+}
+.MetaMask-Notification-headings-3dots{
+    margin-left: 15px;
+}
+.MetaMask-Notification-headings-text{
+    margin-left: 44px;
+    margin-top: 6px;
+}
+.MetaMask-Notification-headings-text h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8A9099;
+}
+.MetaMask-Notification-Signature-Request{
+    width: 100%;
+    height: 64px;
+    background: #E8E9EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MetaMask-Notification-Signature-Request h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3F434A;
+}
+.MetaMask-Notification-body{
+    padding: 21px 25px;
+}
+.MetaMask-Notification-body-tittle{}
+.MetaMask-Notification-body-tittle h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.MetaMask-Notification-body-tittle h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    color: #8A9099;
+}
+.MetaMask-Notification-body .select-all-sect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+    
+}
+.MetaMask-Notification-body .select-all-sect .sellect-all-left-sect{
+    display: flex;
+    align-items: center;
+}
+.MetaMask-Notification-body .select-all-sect .sellect-all-left-sect input{
+    height: 16px;
+    width: 16px;
+}
+.MetaMask-Notification-body .select-all-sect .sellect-all-left-sect lable{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3F434A;
+    margin-left: 12px;
+}
+.MetaMask-Notification-body .select-all-sect .sellect-all-right-sect a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #0867B7;
+}
+.ezl-30px-round-sec{
+    max-width: 303px;
+    height: 197px;
+    margin: 12px auto;
+    background: #ffffff;
+    border: 1px solid #C6C9CC;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.ezl-30px-round-sec .ezl-30px-round-row1{
+    border-bottom: 1px solid #C6C9CC;
+}
+.ezl-30px-round-sec .ezl-30px-round-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 20px;
+}
+.ezl-30px-round-sec .ezl-30px-round-row .ezl-30px-round-row-left{
+    display: flex;
+    align-items: center;
+    
+}
+.ezl-30px-round-sec .ezl-30px-round-row .ezl-30px-round-row-left lable{
+    display: flex;
+    align-items: center;
+}
+.ezl-30px-round-sec .ezl-30px-round-row .ezl-30px-round-row-left input{
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+}
+.ezl-30px-round-sec .ezl-30px-round-row .ezl-30px-round-row-left lable .ezl-30px-round-text{
+    text-align: left;
+    margin-left: 11px;
+}
+.ezl-30px-round-sec .ezl-30px-round-row .ezl-30px-round-row-left lable .ezl-30px-round-text h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+}
+.ezl-30px-round-sec .ezl-30px-round-row .ezl-30px-round-row-left lable .ezl-30px-round-text h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 5px;
+    color: #8A9099;
+}
+.You-are-Signing-tittle{
+    display: flex;
+    justify-content: space-between;
+}
+.You-are-Signing-tittle-left{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.You-are-Signing-tittle-left h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #0867B7;
+}
+.You-are-Signing-tittle-right{
+    display: flex;
+    align-items: center;
+}
+.You-are-Signing-tittle-right-text a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #2F80ED;
+}
+.MetaMask-Notification-Message{
+    margin-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D4D8DD;
+}
+.MetaMask-Notification-Message h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    text-align: left;
+}
+.MetaMask-Notification-Message p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4F4F4F;
+    text-align: left;
+    width: 303px;
+}
+.MetaMask-Notification-btn-sect{}
+.MetaMask-Notification-btn-sect p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    align-items: center;
+    text-align: left;
+    color: #828282;
+    padding-top: 10px;
+}
+.MetaMask-Notification-btn{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.MetaMask-Notification-btn .btn-cancel{
+    background: #ffffff;
+    border: 2px solid #8A9099;
+    padding: 9px;
+    border-radius: 2px;
+    outline: none;
+    width: 47%;
+}
+.MetaMask-Notification-btn .btn-cancel a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #595F69;
+}
+.MetaMask-Notification-btn .btn-sign{
+    background: #0867B7;
+    border: 2px solid transparent;
+    padding: 9px;
+    border-radius: 2px;
+    outline: none;
+    width: 47%;
+}
+.MetaMask-Notification-btn .btn-sign a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.MetaMask-Notification-enoch-connecting-sect{
+    height: 640px;
+    background: #ffffff;
+    border-bottom-left-radius: 4px;
+    
+}
+.MetaMask-Notification-enoch-connecting-sect .MetaMask-Notification-logo{
+    margin-top: 71px;
+}
+.MetaMask-Notification-connecting-img{
+    margin-top: 200px;
+}
+.pop-up-trams-and-service .linking-wallet-pop-up-heading{}
+.pop-up-trams-and-service .linking-wallet-pop-up-heading h1{
+    text-align: left;
+    margin-left: 30px;
+}
+.pop-up-trams-and-service .linking-wallet-pop-up-text{
+    max-width: 405px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.pop-up-trams-and-service .linking-wallet-pop-up-text p{
+    text-align: left;
+    padding-left: 0px;
+}
+.linking-wallet-pop-up-trams-sect{
+    max-width: 175px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8px;
+}
+.linking-wallet-pop-up-trams-sect .linking-wallet-pop-up-trams-text{
+    
+}
+.linking-wallet-pop-up-trams-sect .linking-wallet-pop-up-trams-text a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #2F80ED;
+}
+.linking-wallet-pop-up-trams-check{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.linking-wallet-pop-up-trams-check lable{
+    margin-left: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #3F434A;
+}
+.linking-wallet-pop-up-trams-check input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    border: 1px solid #E8E9EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linking-wallet-pop-up-trams-check input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 10px;
+    color: white;
+    display: none;
+}
+.linking-wallet-pop-up-trams-check input[type="checkbox"]:hover{
+    background-color: #FF7511;
+}
+.linking-wallet-pop-up-trams-check input[type="checkbox"]:checked{
+    background-color: #FF8A00;
+}
+.linking-wallet-pop-up-trams-check input[type="checkbox"]:checked:after{
+    display: block;
+}
+.pop-up-trams-and-service .linking-wallet-pop-up-btn{
+    text-align: right;
+    margin-right: 32px;
+    margin-top: 18px;
+}
+.pop-up-trams-and-service .linking-wallet-pop-up-btn button{
+    padding: 10px 27px;
+    text-align: right;
+}
+.dashboard-header-bredcrumb ul li .dsh-active-black{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: #3F434A;
+}
+.MetaMask-Change-sect{
+    max-width: 1233px;
+    margin: 23px auto;
+    background: #ffffff;
+    height: auto;
+    border-radius: 2px;
+}
+.MetaMask-Change-headings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6px;
+    padding-top: 16px;
+    border-bottom: 1px solid #D4D8DD;
+    margin-bottom: 18px;
+}
+.MetaMask-Change-headings-left{
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+}
+.MetaMask-Change-headings-left-green-dot{
+    margin-top: 15px;
+}
+.MetaMask-Change-headings-left-text h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.MetaMask-Change-row{
+    border-top: 1px solid #D4D8DD;
+}
+.MetaMask-Change-headings-right{
+    margin-right: 32px;
+}
+.MetaMask-Change-headings-right a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #0FB046;
+}
+.MetaMask-Change-row-1-left-text h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #7521E2;
+    margin-left: 16px;
+}
+.MetaMask-Change-row-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px;
+}
+.MetaMask-Change-row-1-left{
+    display: flex;
+    align-items: center;
+    
+}
+.MetaMask-Change-row-1-right{}
+.MetaMask-Change-row-1-right button{
+    padding: 10px 22px;
+    background: #ffffff;
+    border: 2px solid #7521E2;
+    border-radius: 2px;
+    outline: none
+}
+.MetaMask-Change-row-1-right button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #595F69;
+}
+.MetaMask-Change-row-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 32px;
+}
+.MetaMask-Change-row-2-left{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.MetaMask-Change-row-2-left-text h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #4F4F4F;
+    margin-left: 16px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+.MetaMask-Change-row-2-right-text a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #8D35FD;
+    padding-right: 10px;
+}
+.MetaMask-Change-row-2-right{
+    display: flex;
+    align-items: center;
+}
+.MetaMask-Change-row-2-right-icon{
+    display: flex;
+    align-items: center;
+}
+.MetaMask-Change-row-3-disconnect-wallet{
+    padding: 24px 32px;
+}
+.MetaMask-Change-row-3-disconnect-wallet h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+    padding-bottom: 8px;
+}
+.MetaMask-Change-row-3-disconnect-wallet h1 span{
+    color: #231F20;
+    padding-left: 10px;
+}
+.MetaMask-Change-row-3-disconnect-wallet a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #306DC9;
+    padding-top: 16px;
+}
+.MetaMask-warning .MetaMask-warning-text h2 a{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 1px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #8D35FD;
+    }
+.Metamask-change-Connect-wallet-sect{
+    max-width: 1182px;
+    margin: 10px auto;
+    border-radius: 2px;
+    margin-top: 350px;
+}
+.Metamask-change-Connect-wallet-headings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D4D8DD;
+    padding-left: 32px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+.Metamask-change-Connect-wallet-headings h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.Metamask-change-Connect-wallet-close{
+    margin-top: 0px;
+}
+.MetaMask-Change-POP-UP{
+    height: 140%;
+}
 
 
+
+
+
+
+@media (min-width: 1920px) and (max-width: 2650px){
+    
+    .linking-wallet-pop-up {
+        height: 100%;
+        width: 100%
+    }
+    
+}
+
+@media (min-width: 1440px) and (max-width: 1496px){
+    .linking-wallet-pop-up {
+        height: 130%;
+    }
+    .MetaMask-Change-POP-UP {
+        height: 160%;
+    }
+    
+}
+
+@media (min-width: 1360px) and (max-width: 1439px){
+    .linking-wallet-pop-up {
+        height: 130%;
+    }
+    .MetaMask-Change-POP-UP {
+        height: 158%;
+    }
+    
+}
 
 @media (min-width: 1280px) and (max-width: 1359px){
     .We-Accept-list ul li h2 {
@@ -5283,9 +6021,17 @@ input.phone-input {
     .Personal-KYC-Successfully-completed-sect {
         padding: 38px 14px 43px 65px;
     }
+    .linking-wallet-pop-up {
+        height: 130%;
+    }
+    .MetaMask-Change-POP-UP {
+        height: 158%;
+    }
+    
 }
 
 @media (min-width: 992px) and (max-width: 1279px){
+    
     .Linking-wallet-icon-img:after {
         content: "";
         position: absolute;
@@ -5319,89 +6065,63 @@ input.phone-input {
     .Linked-Wallets-Setup-footer-img {
         margin-top: 10px;
     }
-    
     .form-left-side .from-input {
         width: 400px;
     }
-    
     .to-right-side .to-input {
         width: 400px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li h2{
         font-size: 12px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li h2{
         font-size: 12px;
     }
-    
-    .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon{
-        margin-top: 12px;
-        margin-left: 10px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-    }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon-text{
         padding-left: 10px;
         line-height: 17px;
     }
-    
     .We-Accept-list ul li{
         margin: 5px 0px;
     }
-    
     .We-Accept-list ul li h2 {
         font-weight: normal;
         font-size: 10px;
         line-height: 19px;
     }
-    
     .We-Accept-list{
         padding: 20px 15px;
     }
-    
     .Proper-Selfie-list ul li{
         font-size: 11px;
         margin-top: 15px;
     }
-    
     .Required-Documents-left-id-select .select-box .options-container {
         width: 82%;
     }
-    
     .Required-Documents-left-form {
         padding: 20px 0px;
 
     } 
-    
     .Required-Documents-proof .proof-list h2{
         padding-bottom: 5px;
     }
-    
     .proof-progress-headings h3{
         font-size: 12px;
     }
-    
-    
     .Personal-KYC-Pending-title h1 {
         font-size: 36px;
         line-height: 40px;
     }
-    
     .Personal-KYC-completed-text h1{
         font-size: 45px;
     }
-    
     .Personal-KYC-completed-right-sect {
         text-align: center;
         display: flex;
@@ -5409,11 +6129,9 @@ input.phone-input {
         justify-content: center;
         height: 100%;
     }
-
     .Personal-KYC-Rejected-sect {
         padding: 30px 0px 0px 30px;
     }
-    
     .Personal-KYC-Pending-sect {
         margin-bottom: 40px;
         padding: 30px 28px 35px 30px;
@@ -5428,10 +6146,23 @@ input.phone-input {
         margin-bottom: 40px;
         padding: 22px 28px 35px 30px;
     }
-    
-    
-
-
+    .linking-wallet-pop-up {
+        height: 135%;
+    }
+    .linking-wallet-pop-up-content-disabled {
+        max-width: 440px;
+        margin: auto;
+        margin: auto 114px;
+        margin-top: -450px;
+    }
+    .Metamask-change-Connect-wallet-sect {
+        max-width: 1182px;
+        margin: 10px 20px;
+        margin-top: 350px;
+    }
+    .MetaMask-Change-POP-UP {
+        height: 164%;
+    }
 
 }
 
@@ -5467,17 +6198,13 @@ input.phone-input {
         z-index: 1;
 
     }
-    
     .Linking-wallet-icon-text h2 {
         font-size: 17px;
         line-height: 22px;
     }
-    
-
     .Linked-Wallets-Setup {
         padding: 20px 20px 30px 20px;
     }
-    
     .Linked-Wallets-Setup-body {
         max-width: 794px;
         margin-left: 15px;
@@ -5485,88 +6212,61 @@ input.phone-input {
     .Linked-Wallets-Setup-footer-card{
         margin-left: 0px;
     }
-    
     .Linked-Wallets-Setup-footer-img {
         text-align: center;
         margin-top: 35px;
     }
-    
-    
     .form-left-side .from-input{
         width: 127%;
     }
-    
     .to-right-side .to-input{
         width: 127%;
     }
-    
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 {
         padding: 15px;
     }
     .Connect-wallet-menu-sect .menu-row-2 {
         padding: 15px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li h2{
         font-size: 10px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li h2{
         font-size: 10px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon {
         margin: 0px;
-        margin-top: 4px;
-        margin-left: 5px;
     }
-    .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon{
-        margin: 0px;
-        margin-top: 5px;
-        margin-left: 5px;
+    .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon {
+        padding-right: 0px;
     }
-    
-    .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon{
-        margin-top: 6.5px;
-        margin-left: 5px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-    }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon-text{
-        padding-left: 10px;
         line-height: 13px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon img{
         width: 70%;
     }
     .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon img{
         width: 70%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon img{
         width: 85%;
     }
-    
-    .MetaMask-pop-up{
-        height: 510px;
-        width: 210px;
-    }
-    
-    
     .Required-Documents-left-id-select .select-box .options-container{
         width: 88.5%
     }
+    
+    
+    
+    
+    
+    
     
 }
 
@@ -5583,28 +6283,22 @@ input.phone-input {
     .step-2-arrow-sect .arrow-icon a img{
         transform: rotate(90deg);
     }
-    
     .KYC-STEP-2-ID-footer{
         margin-left: 0px;
     }
-    
     .We-do-not-Accept-sect{
         margin-top: 40px;
     }
-    
     .Steps-to-a-Proper-Selfie{
         padding: 30px 0px;
     }
-    
     .Proper-Selfie-img{
         margin-top: 40px;
         text-align: center;
     }
-    
     .Required-Documents-right-col{
         margin-top: 30px;
     }
-    
     .Personal-KYC-Pending-title h1 {
         font-size: 41px;
         line-height: 65px;
@@ -5612,34 +6306,55 @@ input.phone-input {
     .Personal-KYC-Pending-sect{
         padding: 40px 50px;
     }
-    
     .Personal-KYC-Pending-title{
         margin-right: 0px;
     }
-    
     .Personal-KYC-Pending-left-sect {
         text-align: center;
     }
     .Personal-KYC-Successfully-completed-sect {
         padding: 40px 25px;
     }
-    
     .Personal-KYC-Rejected-sect {
         padding: 30px 0px 0px 30px;
     }
-    
     .Personal-KYC-Rejected-text {
         margin-bottom: 40%;
     }
-    
     .Personal-KYC-Pending-right-sect{
         margin-top: 25px;
     }
-    
     .Personal-KYC-rejected-sect .need-help {
         margin-top: -15px;
         margin-right: -20px;
     }
+    .Thanks-for-Joining-img {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .linking-wallet-pop-up {
+        height: 131%;
+    }
+    .linking-wallet-pop-up-content{
+        margin-top: 275px;
+    }
+    .linking-wallet-pop-up-content-disabled {
+        max-width: 440px;
+        margin: auto;
+        margin-left: 5px;
+        margin-top: -450px;
+    }
+    .Metamask-change-Connect-wallet-sect {
+        max-width: 1182px;
+        margin: 10px 20px;
+        margin-top: 350px;
+    }
+    .MetaMask-Change-POP-UP {
+        height: 168%;
+    }
+    
+    
     
     
 }
@@ -5649,7 +6364,6 @@ input.phone-input {
     .Linking-wallet-icon-img img{
         width: 70%;
     }
-    
     .Linking-wallet-icon-img:after {
         content: "";
         position: absolute;
@@ -5679,17 +6393,13 @@ input.phone-input {
         z-index: 1;
 
     }
-    
     .Linking-wallet-icon-text h2 {
         font-size: 16px;
         line-height: 22px;
     }
-    
-    
     .Linked-Wallets-Setup {
         padding: 20px 20px 30px 20px;
     }
-    
     .Linked-Wallets-Setup-body {
         max-width: 794px;
         margin-left: 15px;
@@ -5697,127 +6407,103 @@ input.phone-input {
     .Linked-Wallets-Setup-footer-card{
         margin-left: 0px;
     }
-    
     .Linked-Wallets-Setup-footer-img {
         text-align: center;
         margin-top: 35px;
     }
-    
-    
     .form-left-side .from-input{
         width: 119%;
     }
-    
     .to-right-side .to-input{
         width: 119%;
     }
-    
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 {
         padding: 15px;
     }
     .Connect-wallet-menu-sect .menu-row-2 {
         padding: 15px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li h2{
         font-size: 10px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li h2{
         font-size: 10px;
-    }
-    
-    .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon {
-        margin: 0px;
-        margin-top: 4px;
-        margin-left: 5px;
-    }
-    .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon{
-        margin: 0px;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-    
-    .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon{
-        margin-top: 6.5px;
-        margin-left: 5px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-    }
-    
-    .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon-text{
-        padding-left: 10px;
         line-height: 13px;
     }
-    
+    .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon {
+        margin: 0px;
+        padding-right: 0px;
+    }
     .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon img{
         width: 70%;
     }
     .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon img{
         width: 70%;
     }
-        
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon img{
         width: 95%;
     }
-    
-    .MetaMask-pop-up{
-        height: 510px;
-        width: 210px;
-    }
-    
     .Required-Documents-left-id-select .select-box .options-container{
         width: 87.5%
     }
-    
     .Personal-KYC-Pending-title{
         padding: 20px 0px;
     }
-    
     .Personal-KYC-Pending-title h1 {
         font-size: 39px;
         line-height: 65px;
     }
-    
     .Personal-KYC-Rejected-text h1{
         font-size: 47px;
     }
+    .linking-wallet-pop-up-content-disabled {
+        max-width: 410px;
+        margin: auto;
+        margin-left: 5px;
+        margin-top: -450px;
+    }
+    .linking-wallet-pop-up-content-2{
+        max-width: 340px;
+    }
+    .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon {
+        margin: 0px;
+        margin-top: 5px;
+    }
+    .pop-up-trams-and-service .linking-wallet-pop-up-text p {
+        text-align: left;
+        padding-left: 17px;
+    }
+    
+    
     
 }
 
 @media (min-width: 736px) and (max-width: 767px){
+    
     .Connect-wallet-menu-sect .menu-row-1 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 {
         padding: 10px;
     }
     .Connect-wallet-menu-sect .menu-row-2 {
         padding: 10px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li h2{
         font-size: 10px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li h2{
         font-size: 10px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon {
         margin: 0px;
         margin-top: 4px;
@@ -5828,37 +6514,54 @@ input.phone-input {
         margin-top: 5px;
         margin-left: 5px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon{
         margin-top: 6.5px;
         margin-left: 5px;
         margin-right: 0px;
         margin-bottom: 0px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon-text{
-        padding-left: 10px;
         line-height: 13px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon img{
         width: 70%;
     }
     .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon img{
         width: 70%;
     }
-        
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon img{
         width: 85%;
     }
-    
     .Required-Documents-left-id-select .select-box .options-container{
         width: 88.5%
     }
+    .linking-wallet-pop-up {
+        height: 235%;
+    }
+    .linking-wallet-pop-up-content-disabled {
+        max-width: 330px;
+        margin-left: 24px;
+        margin-top: -421px;
+    }
+    .linking-wallet-pop-up-content-disabled .linking-wallet-pop-up-text p{
+        padding: 0px 10px;
+    }
+    .pop-up-trams-and-service .linking-wallet-pop-up-text p{
+        padding-left: 20px;
+    }
+    .linking-wallet-pop-up-trams-check input[type="checkbox"]{
+        height: 14px;
+        width: 14px;
+    }
+    .linking-wallet-pop-up-trams-check lable{
+        font-size: 13px;
+    }
+    
     
 }
 
 @media(max-width: 767px){
+    
     .Linking-wallet-icon-img:after {
         content: "";
         position: absolute;
@@ -5869,16 +6572,12 @@ input.phone-input {
         top: 60px;
         z-index: 1;
     }
-    
     .Linking-wallet-icon{
         margin-bottom: 25px;
     }
-    
-    
     .Linked-Wallets-Setup {
         padding: 20px 20px 30px 20px;
     }
-    
     .Linked-Wallets-Setup-body {
         max-width: 794px;
         margin-left: 15px;
@@ -5887,158 +6586,163 @@ input.phone-input {
     .Linked-Wallets-Setup-footer-card{
         margin-left: 0px;
     }
-    
     .Linked-Wallets-Setup-footer-img {
         text-align: center;
         margin-top: 35px;
     }
-    
     .Setup-with-Trezor-MetaMask-sect .MetaMask-body p{
         font-size: 15px;
     }
-    
     .enoch-last-btn-sect{
         text-align: center;
     }
-    
     .enoch-last-btn-sect .btn-back {
         margin-right: 20px;
         background: transparent;
         border: 3px solid #8656EF;
-        padding: 13.5px 48px;
         border-radius: 4px;
-        width: 40%;
+        width: 45%;
 
     }
-
     .enoch-last-btn-sect .btn-next {
         padding: 18px 0px;
-        background: #FF8A00;
-        border-radius: 4px;
-        border: none;
+        width: 95%;
+    }
+    .enoch-last-btn-sect .btn-next-two{
+        width: 45%;
+    }
+    .enoch-last-btn-sect .button-Disabled{
         width: 40%;
     }
-
     .form-left-side .from-input{
         width: 124%;
     }
-    
     .to-right-side .to-input{
         width: 124%;
     }
-    
-    .MetaMask-pop-up{
-        height: 626px;
-        width: 240px;
-        padding-top: 350px;
-    }
-    
     .Required-Documents-left-form .input-left {
         padding-right: 0px;
         margin-bottom: 15px;
     }
-
     .Required-Documents-left-form .input-right {
         margin-top: 15px;
         padding-left: 0px;
     }
-    
     .Required-Documents-left-id-select .select-box .options-container{
         top: 13%;
     }
-    
     .Personal-KYC-Successfully-completed-sect{
         margin-top: 120px;
     }
     .Personal-KYC-completed-text h1{
         font-size: 43px;
     }
-    
     .KYC-step-4-btn {
         margin-bottom: 80px;
     }
-    
     .Personal-KYC-Rejected-text h1{
         font-size: 43px;
     }
     
+    .MetaMask-warning {
+        max-width: 270px;
+        padding: 15px 30px;
+    }
+    .Metamask-change-Connect-wallet-sect {
+        max-width: 1182px;
+        margin: 10px 20px;
+        margin-top: 250px;
+    }
+    
+    .MetaMask-Change-POP-UP {
+        height: 291%;
+    }
+    
+    
 }
 
 @media (min-width: 667px) and (max-width: 735px){
+    
     .form-left-side .from-input{
         width: 111%;
     }
-    
     .to-right-side .to-input{
         width: 111%;
     }
-    
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li{
         width: 19%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li h2{
         font-size: 9px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li h2{
         font-size: 9px;
+        line-height: 12px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 {
         padding: 10px;
     }
     .Connect-wallet-menu-sect .menu-row-2 {
         padding: 10px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon {
         margin: 0px;
-        margin-top: 4px;
-        margin-left: 5px;
+        padding-right: 0px;
     }
     .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon{
         margin: 0px;
         margin-top: 5px;
-        margin-left: 5px;
+        padding-right: 0px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon{
-        margin-top: 6.5px;
-        margin-left: 5px;
-        margin-right: 0px;
-        margin-bottom: 0px;
+        
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon-text{
-        padding-left: 10px;
-        line-height: 13px;
+        
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li .CW-icon img{
         width: 70%;
     }
     .Connect-wallet-menu-sect .menu-row-2 ul li .CW-icon img{
         width: 70%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li .row-2-cw-icon img{
         width: 95%;
     }
-    
-    
     .Required-Documents-left-id-select .select-box .options-container{
         width: 87%
     }
-    
     .Personal-KYC-Pending-title h1 {
         font-size: 36px;
         line-height: 40px;
+    }
+    .linking-wallet-pop-up {
+        height: 230%;
+    }
+    .linking-wallet-pop-up-content {
+        margin-top: 235px;
+    }
+    
+    
+    
+}
+
+@media(max-width: 735px){
+    .linking-wallet-pop-up-content-disabled {
+        max-width: 440px;
+        margin-left: 5px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .linking-wallet-pop-up-content-2{
+        margin: 50px auto;
+        border-radius: 4px;
+    }
+    .MetaMask-Change-POP-UP {
+        height: 291%;
     }
     
 }
@@ -6091,7 +6795,6 @@ input.phone-input {
         justify-content: space-between;
         flex-direction: column;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li{
         margin: 10px auto;
         width: 220px;
@@ -6100,11 +6803,9 @@ input.phone-input {
         margin: 10px auto;
         width: 220px;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul .last-CW-icon-li{
         display: none;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 {
         padding: 0px 10px;
     }
@@ -6112,38 +6813,76 @@ input.phone-input {
         padding: 0px 10px;
         padding-bottom: 10px;
     }
-    
-    .MetaMask-pop-up {
-        height: 626px;
-        width: 195px;
-        padding-top: 350px;
-    }
-    
     .KYC-STEP-2-ID-footer{
         padding: 20px;
     }
-    
     .Personal-KYC-Pending-sect {
         padding: 40px 20px;
     }
-            
     .Personal-KYC-rejected-sect .need-help {
         margin-top: -15px;
         margin-right: 5px;
     }
+    .linking-wallet-pop-up {
+        height: 315%;
+    }
+    .linking-wallet-pop-up-content {
+        margin-top: 235px;
+    }
+    .linking-wallet-pop-up-content-disabled {
+        max-width: 440px;
+        margin-left: 5px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .linking-wallet-pop-up-content-2{
+        margin: 35px auto;
+    }
+    .MetaMask-Change-headings {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .MetaMask-Change-headings-left {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .MetaMask-Change-headings-right {
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+    .MetaMask-Change-headings-left {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        flex-direction: column-reverse;
+    }
+    .MetaMask-Change-headings-left-green-dot {
+        margin-top: 0px;
+    }
+    .MetaMask-Change-headings-left-text h1{
+        text-align: center;
+    }
+    .Metamask-change-Connect-wallet-sect {
+        max-width: 1182px;
+        margin: 10px 20px;
+        margin-top: 100px;
+    }
     
-       
+    .MetaMask-Change-POP-UP {
+        height: 298%;
+    }  
+    
 }
 @media (min-width: 425px) and (max-width: 539px){
-.Linked-Wallets-Setup-footer-card {
+    
+    .Linked-Wallets-Setup-footer-card {
     padding: 20px 20px;
 }
-    
-.Linked-Wallets-Setup-body p {
+    .Linked-Wallets-Setup-body p {
     font-size: 12px;
     line-height: 18px;
 }
-    
     .from-input-left {
         border-right: 1px solid #E0E0E0;
         margin-right: 8px;
@@ -6152,22 +6891,17 @@ input.phone-input {
     .form-left-side .from-input{
         width: 100%;
     }
-    
     .to-right-side .to-input{
         width: 100%;
     }
-    
     .list-bullet-coustom {
         height: 10px;
         width: 17px;
     }
-    
     .list-bullet-coustom-2{
         height: 10px;
         width: 12px;
     }
-    
-
     .Required-Documents-left-id-select .select-box .options-container{
         width: 80%;
     }
@@ -6178,108 +6912,120 @@ input.phone-input {
 }
 
 @media(max-width: 539px){
-    .MetaMask-pop-up {
-        height: 626px;
-        width: 150px;
-        padding-top: 350px;
-    }
-    
-    .MetaMask-pop-up-text h1{
-        font-size: 16px;
-        line-height: 10px;
-    }
     
     .Required-Documents-left-id-select .select-box .options-container.active + .selected::after {
     transform: rotate(90deg);
     top: 0px;
     right: 10%;
 }
-    
     .Required-Documents-proof .proof-list-upload-box{
         padding: 0px 20px;
     }
-    
     .Required-Documents-proof .proof-list-1-upload-box, .Required-Documents-proof .proof-list-2-upload-box{
         flex-direction: column;
         height: auto;
         padding: 0px 20px;
     }
-    
     .proof-progress {
         padding: 0px 0px;
         margin: 20px 0px;
         width: 100%;
     }
-    
     .proof-front {
         border-bottom: 1px solid #E0E0E0;
         border-right: none;
         padding-bottom: 15px;
         padding-top: 15px;
     }
-    
     .progress-line img {
         height: 2.4px;
     }
-    
     .Personal-KYC-Pending-progress-bar img {
         width: 100%;
         height: 4px;
     }
-    
     .Personal-KYC-completed-text h1 {
     font-size: 34px;
         line-height: 50px;
 }
-    
     .Personal-KYC-completed-text h2{
         font-size: 26px;
     }
-    
     .KYC-step-4-btn{
         margin-left: 10px;
     }
-    
     .KYC-step-4-btn button{
         width: 100%;
         text-align: center;
     }
-    
     .Personal-KYC-Rejected-text {
         margin-bottom: 75%;
     }
-    
     .Personal-KYC-Pending-title h1 {
         font-size: 28px;
         line-height: 40px;
     }
-    
     .Personal-KYC-Pending-title h2 {
         font-size: 39px;
         line-height: 45.37px;
     }
-    
     .Verificaion-Successfully-completed-text h3{
         font-size: 23px;
         line-height: 35px;
     }
+    .linking-wallet-pop-up {
+        height: 320%;
+    }
+    .linking-wallet-pop-up-content {
+        margin-top: 295px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .linking-wallet-pop-up-content-disabled {
+        max-width: 440px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 100px;
+    }
+    .pop-up-trams-and-service .linking-wallet-pop-up-text p {
+        text-align: left;
+        padding-left: 20px;
+    }    
+    .MetaMask-Change-row-1 {
+        flex-direction: column;
+    }
+    .MetaMask-Change-row-1-left {
+        margin-bottom: 15px;
+    }
+    .MetaMask-Change-row-2 {
+        padding: 26px 10px;
+        flex-direction: column;
+    }
+    .MetaMask-Change-row-2-left {
+        justify-content: center;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .MetaMask-Change-row-3-disconnect-wallet {
+        padding: 24px 0px;
+        text-align: center;
+    }
+    
     
 }
 
 @media (min-width: 411px) and (max-width: 424px){
+    
     .Linked-Wallets-Setup-footer-card {
         padding: 20px 20px;
     }
-   
     .Linked-Wallets-Setup-body p {
         font-size: 11px;
         line-height: 18px;
     }
-    
     .Linked-Wallets-Setup-footer-card h1{
         font-size: 15px;
     }
-    
     .from-input-left {
         border-right: 1px solid #E0E0E0;
         margin-right: 5px;
@@ -6289,7 +7035,6 @@ input.phone-input {
     .form-left-side .from-input{
         width: 100%;
     }
-    
     .to-right-side .to-input{
         width: 100%;
     }
@@ -6297,16 +7042,13 @@ input.phone-input {
         height: 10px;
         width: 17px;
     }
-    
     .list-bullet-coustom-2{
         height: 10px;
         width: 12px;
     }
-    
     .Required-Documents-left-id-select .select-box .options-container{
         width: 79%;
     }
-    
     .Personal-KYC-completed-text h1 {
         font-size: 33px;
         line-height: 50px;
@@ -6315,74 +7057,58 @@ input.phone-input {
         font-size: 25px;
         line-height: 32px;
     }
-    
     .Personal-KYC-Rejected-text {
     margin-bottom: 76%;
 }
     
+    
+    
 }
 
 @media (min-width: 375px) and (max-width: 410px){
+    
     .Linked-Wallets-Setup-footer-card {
         padding: 20px 20px;
     }
-   
     .Linked-Wallets-Setup-body p {
         font-size: 14px;
         line-height: 22px;
     }
-    
     .Linked-Wallets-Setup-footer-card h1{
         font-size: 15px;
     }
-    
     .from-input-left {
         border-right: 1px solid #E0E0E0;
         margin-right: 10px;
         padding-right: 10px;
         text-align: center;
     }
-    
     .from-input-right {
         padding-top: 20px;
     }
-    
     .form-left-side .from-input{
         width: 100%;
     }
-    
-    
     .to-right-side .to-input{
         width: 100%;
     }
-    
-    .enoch-last-btn-sect .btn-next a{
-        font-size: 14px;
-    }
-    
     .list-bullet-coustom {
         height: 10px;
         width: 20px;
     }
-    
     .list-bullet-coustom-2{
         height: 10px;
         width: 13px;
     }
-    
-    
     .Required-Documents-left-id-select .select-box .options-container{
         width: 77%;
     }
-        
     .Personal-KYC-Rejected-text {
     margin-bottom: 85%;
 }
     .Personal-KYC-Rejected-sect {
     padding: 15px 0px 0px 15px;
 }
-    
-    
     .Verificaion-Successfully-completed-headings h1 {
         font-size: 31px;
         line-height: 42px;
@@ -6395,12 +7121,29 @@ input.phone-input {
         font-size: 20px;
         line-height: 27px;
     }
-    
+    .linking-wallet-pop-up-content-2{
+        margin: 20px 20px;
+    }
+    .MetaMask-Notification-headings-text {
+        margin-left: 25px;
+        margin-top: 6px;
+    }
+    .MetaMask-Notification-Message p{
+        width: 300px;
+    }
+    .linking-wallet-pop-up-content-disabled .linking-wallet-pop-up-text p{
+        padding: 0px 10px;
+    }
+    .pop-up-trams-and-service .linking-wallet-pop-up-text p {
+        text-align: left;
+        padding-left: 17px;
+    }
     
     
 }
 
 @media (min-width: 360px) and (max-width: 374px){
+    
     .Linked-Wallets-Setup-footer-card {
         padding: 20px 20px;
     }
@@ -6425,9 +7168,6 @@ input.phone-input {
     }
     .to-right-side .to-input{
         width: 100%;
-    }
-    .enoch-last-btn-sect .btn-next a{
-        font-size: 14px;
     }
     .list-bullet-coustom {
         height: 10px;
@@ -6455,13 +7195,10 @@ input.phone-input {
         font-size: 28px;
         line-height: 40px;
     }
-    
     .Personal-KYC-Pending-title h2 {
         font-size: 35px;
         line-height: 45.37px;
     }
-    
-    
     .Verificaion-Successfully-completed-headings h1 {
         font-size: 31px;
         line-height: 42px;
@@ -6474,12 +7211,38 @@ input.phone-input {
         font-size: 20px;
         line-height: 27px;
     }
+    .linking-wallet-pop-up-content-2{
+        margin: 15px 15px;
+    }
+    .MetaMask-Notification-headings-text {
+        margin-left: 30px;
+        margin-top: 6px;
+    }
+    .MetaMask-Notification-Message p{
+        width: 280px;
+    }
+    .linking-wallet-pop-up-content-disabled .linking-wallet-pop-up-text p{
+        padding: 0px 10px;
+    }
+    .pop-up-trams-and-service .linking-wallet-pop-up-text p {
+        text-align: left;
+        padding-left: 17px;
+    }
+    .linking-wallet-pop-up-trams-check input[type="checkbox"]{
+        height: 14px;
+        width: 14px;
+    }
+    .linking-wallet-pop-up-trams-check lable{
+        font-size: 13px;
+    }
+    
     
     
     
 }
 
 @media (min-width: 320px) and (max-width: 359px){
+    
     .Linked-Wallets-Setup-footer-card {
         padding: 20px 20px;
     }
@@ -6508,8 +7271,9 @@ input.phone-input {
     .enoch-last-btn-sect .btn-back a{
         font-size: 12px;
     }
-    .enoch-last-btn-sect .btn-next a{
+    .enoch-last-btn-sect .btn-next-two a {
         font-size: 12px;
+        line-height: 22px;
     }
     .list-bullet-coustom {
         height: 10px;
@@ -6553,7 +7317,6 @@ input.phone-input {
         font-size: 34px;
         line-height: 50px;
     }
-    
     .Verificaion-Successfully-completed-headings h1 {
         font-size: 28px;
         line-height: 38px;
@@ -6566,80 +7329,92 @@ input.phone-input {
         font-size: 24px;
         line-height: 30px;
     }
-    
+    .enoch-last-btn-sect .btn-next a{
+        font-size: 12px;
+    }
+    .linking-wallet-pop-up-content-2{
+        margin: 15px 15px;
+    }
+    .MetaMask-Notification-headings-text {
+        margin-left: 20px;
+        margin-top: 6px;
+    }
+    .MetaMask-Notification-Message p{
+        width: 260px;
+    }
+    .linking-wallet-pop-up-content-disabled .linking-wallet-pop-up-text p{
+        padding: 0px 10px;
+    }
+    .pop-up-trams-and-service .linking-wallet-pop-up-text p {
+        text-align: left;
+        padding-left: 17px;
+    }
+    .linking-wallet-pop-up-trams-check input[type="checkbox"]{
+        height: 13px;
+        width: 13px;
+    }
+    .linking-wallet-pop-up-trams-check lable{
+        font-size: 12px;
+    }
     
     
 }
 
 @media (min-width: 280px) and (max-width: 319px){
+    
     .Linked-Wallets-Setup-footer-card {
         padding: 20px 20px;
     }
-   
     .Linked-Wallets-Setup-body p {
         font-size: 14px;
         line-height: 22px;
     }
-    
     .Linked-Wallets-Setup-footer-card h1{
         font-size: 15px;
     }
-    
     .from-input-left {
         border-right: 1px solid #E0E0E0;
         margin-right: 10px;
         padding-right: 10px;
         text-align: center;
     }
-    
     .from-input-right {
         padding-top: 20px;
     }
-    
     .form-left-side .from-input{
         width: 100%;
     }
-    
     .to-right-side .to-input{
         width: 100%;
     }
-    
-    .enoch-last-btn-sect .btn-back a{
+    .enoch-last-btn-sect .btn-back a {
         font-size: 10px;
     }
-    
-    .enoch-last-btn-sect .btn-next a{
-        font-size: 10px;
+    .enoch-last-btn-sect .btn-back {
+        width: 45%;
     }
-    
+    .enoch-last-btn-sect .btn-next-two a {
+        font-size: 10px;
+        line-height: 22px;
+    }
     .Connect-wallet-menu-sect .menu-row-1 ul li {
         margin: 10px auto;
         width: 100%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-2 ul li {
         margin: 10px auto;
         width: 100%;
     }
-    
     .Connect-wallet-menu-sect .menu-row-1 ul li h2{
         font-size: 12px;
     }
     .Connect-wallet-menu-sect .menu-row-2 ul li h2{
         font-size: 12px;
     }
-   
-    .MetaMask-pop-up {
-        height: 626px;
-        width: 150px;
-        padding-top: 390px;
-    }
-    
     .list-bullet-coustom {
         height: 10px;
         width: 32px;
     }
-    
     .list-bullet-coustom-2{
         height: 10px;
         width: 22px;
@@ -6648,27 +7423,21 @@ input.phone-input {
         height: 10px;
         width: 15px;
     }
-    
-    
     .Required-Documents-left-id-select .select-box .options-container{
         width: 69%;
         top: 14%;
     }
-    
     .proof-progress-headings h3{
         font-size: 12px;
     }
-    
     .Personal-KYC-Pending-title h1 {
         font-size: 20px;
         line-height: 20px;
     }
-    
     .Personal-KYC-Pending-title h2 {
         font-size: 25px;
         line-height: 33px;
-    }
-    
+    } 
     .Personal-KYC-completed-text h1 {
         font-size: 23px;
         line-height: 38px;
@@ -6676,29 +7445,23 @@ input.phone-input {
     .Personal-KYC-Successfully-completed-sect {
         padding: 40px 10px;
     }
-
     .Personal-KYC-completed-text h2 {
         font-size: 17px;
         line-height: 25px;
     }
-    
     .Personal-KYC-Rejected-text {
         margin-bottom: 115%;
     }
-
     .Personal-KYC-Rejected-sect {
         padding: 15px 0px 0px 15px;
     }
-
     .Personal-KYC-Rejected-text h1 {
         font-size: 30px;
         line-height: 40px;
     }
-    
     .Personal-KYC-rejected-sect .need-help h1{
         font-size: 13px;
     }
-    
     .Verificaion-Successfully-completed-headings h1 {
         font-size: 25px;
         line-height: 35px;
@@ -6711,7 +7474,38 @@ input.phone-input {
         font-size: 21px;
         line-height: 28px;
     }
-    
+    .enoch-last-btn-sect .btn-next a{
+        font-size: 10px;
+    }
+    .linking-wallet-pop-up {
+        height: 330%;
+    }
+    .linking-wallet-pop-up-content-2{
+        margin: 15px 15px;
+    }
+    .MetaMask-Notification-headings-text {
+        margin-left: 25px;
+        margin-top: 6px;
+    }
+    .MetaMask-Notification-Message p{
+        font-size: 11px;
+        width: 220px;
+
+    }
+    .linking-wallet-pop-up-content-disabled .linking-wallet-pop-up-text p{
+        padding: 0px 10px;
+    }
+    .pop-up-trams-and-service .linking-wallet-pop-up-text p {
+        text-align: left;
+        padding-left: 17px;
+    }
+    .linking-wallet-pop-up-trams-check input[type="checkbox"]{
+        height: 11px;
+        width: 11px;
+    }
+    .linking-wallet-pop-up-trams-check lable{
+        font-size: 10px;
+    }
     
     
     
